@@ -1,8 +1,9 @@
 
-function loveIndex(){
+var n = Math.random();
+n = Math.round(n*100) + "%";
 
-    var n = Math.random();
-    n = Math.round(n*100);
-    document.getElementById('msg').innerHTML = (n + "%");
-   
-}
+document.querySelector("button.btn").addEventListener("click",function(){
+    this.innerHTML = n ;
+})
+
+document.reload;
